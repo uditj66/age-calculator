@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>age calculator</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Rancho", cursive;
+        color: black;
+        font-size: 36px;
+      }
+      h1 {
+        text-align: center;
+        background-color: rgb(128, 85, 169);
+        padding: 50px;
+        letter-spacing: 5px;
+        height: 10%vh;
+      }
+      .btn {
+        margin: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 200px;
+        height: 75px;
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: rgb(128, 85, 169);
+        cursor: pointer;
+      }
+      .btn:hover {
+        opacity: 0.8;
+      }
+      .container {
+        padding: 20px;
+        border-radius: 10px;
+        margin: 50px auto;
+        width: 1000px;
+        box-shadow: 5px 15px 30px rgba(128, 128, 128, 0.384);
+        height: 700px;
+      }
+      #birthdate {
+        border-radius: 15px;
+        margin: 50px;
+        padding: 20px;
+        cursor: pointer;
+      }
+
+      .container ul li {
+        list-style: none;
+        padding: 5px;
+      }
+      .container2 {
+        padding-left: 100px;
+      }
+      .container3 {
+        display: flex;
+        justify-content: center;
+      }
+      .pills {
+        margin: 10px;
+      }
+      p {
+        background: -webkit-linear-gradient(0deg, #f9d949, #f45050, #0e9dee);
+        /* -webkit-background-clip: text; */
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AGE CALCULATOR</h1>
+    <div class="container">
+      <div class="container2">
+        <label for="birtdate">ENTER YOUR BIRTHDAY DATE :</label>
+        <input type="date" name="date" id="birthdate" />
+      </div>
+
+      <ul>
+        <li><span id="years" class="pills"></span>Years</li>
+        <li><span id="months" class="pills"></span>Months</li>
+        <li><span id="days" class="pills"></span>Days</li>
+        <li><span id="hours" class="pills"></span>Hours</li>
+        <li><span id="min" class="pills"></span>Minutes</li>
+        <li><span id="sec" class="pills"></span>Seconds</li>
+      </ul>
+      <div class="container3">
+        <button id="btn1" class="btn">Calculate</button>
+        <button id="btn2" class="btn">Reset</button>
+      </div>
+      <p>Age is just a number ! what matter is how you spend the age....</p>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
